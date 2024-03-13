@@ -37,7 +37,7 @@ RUN  --mount=type=cache,target=/var/cache/m2 mvn --batch-mode package -P tomcat-
 
 ####### eni-todo-tomcat-base #######
 
-FROM tomcat:jdk11-openjdk-slim AS eni-todo-tomcat-base
+FROM tomcat:9.0.41-jdk11-openjdk-slim AS eni-todo-tomcat-base
 
 ARG MULTIPART_LOCATION=/usr/local/tomcat/files
 
